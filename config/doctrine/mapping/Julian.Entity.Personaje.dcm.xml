@@ -1,0 +1,19 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                             xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                               http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+       <entity name="Julian\Entity\Personaje"  table="personajes">
+           <id name="id" type="integer">
+               <generator strategy="AUTO" />
+           </id>
+
+           <field name="nombre" type="string" nullable="true" />
+           <field name="descripcion" type="string" nullable="true" />
+           <field name="fechaCreacion" type="date" nullable="true"/>                      
+           <field name="fuerza" type="integer" nullable="true" />
+           <field name="inteligencia" type="integer" nullable="true" />
+           <field name="riqueza" type="integer" nullable="true" />     
+           <field name="eshumano" type="boolean" nullable="true" />  
+       </entity>
+</doctrine-mapping>
